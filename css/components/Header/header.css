@@ -5,7 +5,6 @@
     width: 100%;
     height: 100vh;
      /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho correto da sua imagem */
-
 }
 
 
@@ -42,13 +41,18 @@
     font-weight: 700;
     text-decoration: none;
 }
-/* QUANDO O USUARIO PASSAR O MOUSE EM CIMA DAS OPÇÕES DO HEADER, FICARA AZUL-CIANO */
+/* QUANDO O USUARIO PASSAR O MOUSE EM CIMA DAS OPÇÕES DO HEADER, FICARA CINZA CLARO*/
 .header-home .desktop-links .desktop-ul .desktop-li .desktop-a:hover{
-    color: var(--sub-roxo);
-    cursor: pointer;
-}
-/* QUANDO O USUARIO PASSAR O CLICAR EM ALGUMA DAS OPÇÕES DO HEADER, FICARA CINZA-ESCURO */
-.header-home .desktop-links .desktop-ul .desktop-li .desktop-a:active {
     color: var(--titulo-claro);
     cursor: pointer;
+    transition: transform 0.3s ease; /* Adicionando uma transição suave de 0.3 segundos */
+
+    transform: scale(1.15);
+}
+/* QUANDO O USUARIO PASSAR E CLICAR EM ALGUMA DAS OPÇÕES DO HEADER, FICARA LILAS */
+.header-home .desktop-links .desktop-ul .desktop-li .desktop-a:active {
+    color: var(--lilas);
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Adicionando uma transição suave de 0.3 segundos */
+    transform: scale(1.20);
 }
