@@ -1,0 +1,8 @@
+.teste{
+    color: var(--sub-roxo);/* chamando a cor da variavel global, para facilitar na hora de procurar a # da cor */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 32px;
+}
