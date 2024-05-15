@@ -45,7 +45,7 @@
 .header-home .desktop-links .desktop-ul .desktop-li .desktop-a:hover{
     color: var(--titulo-claro);
     cursor: pointer;
-    transition: transform 0.3s ease; /* Adicionando uma transição suave de 0.3 segundos */
+    transition: transform 1.3s ease; /* Adicionando uma transição suave de 0.3 segundos */
 
     transform: scale(1.15);
 }
