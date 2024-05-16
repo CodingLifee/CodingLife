@@ -1,5 +1,66 @@
+.titulo-home{
+    color: var(--fundo-branco);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 82px;
+}
+
+.titulo-home1{
+    color: var(--fundo-branco);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.titulo-home2{
+    color: var(--fundo-branco);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.sub-home{
+    color: var(--fundo-branco);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+   line-height: 36px;
+    padding-top: 30px;
+}
+
+.Container-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    padding-bottom: 5px;
+    padding-left: 13.5%;
+}
+
+.sobrenos{
+    border: 1px solid var(--sub-roxo);/* grossura da borda, tipo da borda, cor */
+    border-radius: 5px;
+    background-color: var(--sub-roxo);
+    width: 10%;
+    height: 56px;
+    color: var(--fundo-branco);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 36px;
+ 
+}
+
+.sobrenos:hover{
+    border: 1px solid var(--fundo-branco);/* grossura da borda, tipo da borda, cor */
+    background-color: var(--fundo-branco);
+    color: var(--sub-roxo);
+    cursor: pointer;
+}
+
 .teste{
-    color: var(--sub-roxo);/* chamando a cor da variavel global, para facilitar na hora de procurar a # da cor */
+    color: var(--sub-roxo);
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
