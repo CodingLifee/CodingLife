@@ -21,7 +21,7 @@
 }
 
 .sub-home{
-    color: var(--fundo-branco);
+    color: #c4c4c4;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 24px;
@@ -41,7 +41,7 @@
 .sobrenos{
     border: 1px solid var(--sub-roxo);/* grossura da borda, tipo da borda, cor */
     border-radius: 5px;
-    background-color: var(--sub-roxo);
+    background: linear-gradient(to right, #A780F5 08%, #641AF8 70%);
     width: 10%;
     height: 56px;
     color: var(--fundo-branco);
@@ -49,14 +49,47 @@
     font-size: 18px;
     font-weight: 700;
     margin-top: 36px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
  
 }
 
-.sobrenos:hover{
-    border: 1px solid var(--fundo-branco);/* grossura da borda, tipo da borda, cor */
-    background-color: var(--fundo-branco);
-    color: var(--sub-roxo);
+.sobrenos:hover {
+    border: none; /* Remove a borda */
+    color: var(--fundo-branco);
     cursor: pointer;
+    transform: scale(1.1); /* Aumenta o tamanho do botão */
+}
+
+.container-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.informacoes{
+    color: var(--fundo-branco);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+   /*line-height: 36px; */
+    padding-top: 30px;
+    padding-right: 36px;
+}
+
+.informacoes-mais{
+    color: #A780F5;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+   /*line-height: 36px; */
+    padding-top: 30px;
+}
+
+.sub-info{
+    color: #c4c4c4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+   /*line-height: 36px; */
 }
 
 .teste{
