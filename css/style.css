@@ -6,20 +6,6 @@
     line-height: 82px;
 }
 
-.titulo-home1{
-    color: var(--fundo-branco);
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 80px;
-}
-
-.titulo-home2{
-    color: var(--fundo-branco);
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 80px;
-}
-
 .sub-home{
     color: #c4c4c4;
     font-family: "Poppins", sans-serif;
@@ -92,11 +78,65 @@
    /*line-height: 36px; */
 }
 
-.teste{
-    color: var(--sub-roxo);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;
-    padding-bottom: 32px;
+.container-sobrenos{
+    display: flex;
+    flex-direction: row;
 }
+.linha-roxa {
+    height: 12px;
+    border: 4px  transparent;
+    background: linear-gradient(to right, #A780F5 8%, #641AF8 70%);
+    border-radius: inherit; /* Mantém a borda arredondada, se aplicável */
+    width: 90px;
+    margin-top: 10%; /* Ajuste conforme necessário para o espaço superior */
+    margin-left: 13.5%; /* Alinha ao lado esquerdo da página */
+}
+.titulo-SobreNos{
+    color: var(--sub-roxo);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    padding-left: 13.5%;
+    padding-top: 40px;
+}
+.his-sobrenos{
+    color: #c4c4c4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+   line-height: 36px;
+    padding-top: 30px;
+    padding-left: 13.5%;
+    padding-right: 36px;
+}
+.extra-text {
+    display: none; /* Esconde o texto extra inicialmente */
+}
+
+.imgSobreNos{
+    width: 37%;
+    height: auto;
+}
+.btn-VerMais{
+    border: 1px solid var(--sub-roxo);/* grossura da borda, tipo da borda, cor */
+    border-radius: 5px;
+    background: linear-gradient(to right, #A780F5 08%, #641AF8 70%);
+    width: 10%;
+    height: 56px;
+    color: var(--fundo-branco);
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 36px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    margin-left: 13.5%;
+}
+
+.btn-VerMais:hover {
+    border: none; /* Remove a borda */
+    color: var(--fundo-branco);
+    cursor: pointer;
+    transform: scale(1.1); /* Aumenta o tamanho do botão */
+    
+}
+
