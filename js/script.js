@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+
+            // Atualiza a URL sem recarregar a página
+            history.pushState(null, null, targetId);
+        });
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('scrollSobreNos').addEventListener('click', function() {
         document.getElementById('sobrenos').scrollIntoView({
             behavior: 'smooth'
@@ -18,3 +38,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var mybutton = document.getElementById("backToTopBtn");
+
+    // Quando o usuário rola para baixo 20px da parte superior do documento, mostre o botão
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // Quando o usuário clica no botão, rola para a seção #home
+    mybutton.addEventListener('click', function() {
+        document.getElementById('home').scrollIntoView({behavior: 'smooth'});
+    });
+});
+
+
+

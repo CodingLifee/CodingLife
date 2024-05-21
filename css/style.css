@@ -21,7 +21,8 @@
     justify-content: center;
     height: 90%;
     padding-bottom: 5px;
-    padding-left: 13.5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .sobrenos{
@@ -44,11 +45,6 @@
     color: var(--fundo-branco);
     cursor: pointer;
     transform: scale(1.1); /* Aumenta o tamanho do botão */
-}
-
-.container-info{
-    display: flex;
-    flex-direction: row;
 }
 
 .informacoes{
@@ -78,44 +74,51 @@
    /*line-height: 36px; */
 }
 
-.container-sobrenos{
+.container-sobre{
+    padding: 64px 10%;
+    background-color: aqua;
+    display: block;
+    float: left;
+}
+
+.container-conteudo{
     display: flex;
     flex-direction: row;
+    padding: 24px 0;
+    background-color: yellow;
 }
+
 .linha-roxa {
     height: 12px;
     border: 4px  transparent;
     background: linear-gradient(to right, #A780F5 8%, #641AF8 70%);
     border-radius: inherit; /* Mantém a borda arredondada, se aplicável */
     width: 90px;
-    margin-top: 10%; /* Ajuste conforme necessário para o espaço superior */
-    margin-left: 13.5%; /* Alinha ao lado esquerdo da página */
 }
 .titulo-SobreNos{
     color: var(--sub-roxo);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 48px;
-    padding-left: 13.5%;
-    padding-top: 40px;
+    padding: 24px 0;
 }
+
 .his-sobrenos{
     color: #c4c4c4;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 24px;
    line-height: 36px;
-    padding-top: 30px;
-    padding-left: 13.5%;
-    padding-right: 36px;
+    padding-right: 46px;
 }
 .extra-text {
     display: none; /* Esconde o texto extra inicialmente */
 }
 
 .imgSobreNos{
-    width: 37%;
+    width: 48%;
     height: auto;
+    object-fit: cover;
 }
 .btn-VerMais{
     border: 1px solid var(--sub-roxo);/* grossura da borda, tipo da borda, cor */
@@ -129,7 +132,6 @@
     font-weight: 700;
     margin-top: 36px;
     transition: transform 0.3s ease; /* Adiciona uma transição suave */
-    margin-left: 13.5%;
 }
 
 .btn-VerMais:hover {
@@ -140,3 +142,56 @@
     
 }
 
+.flex{
+   width:55%;
+   padding-left: 16%;
+}
+
+.container-servicos{
+    display: flex;
+    flex-direction: row;
+}
+.imgRedi{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+.service {
+    width: 30%;
+    text-align: center;
+}
+.service img {
+    width: 100%;
+    height: auto;
+}
+
+.descricao{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    width: 33.3%;
+    height: fit-content;
+    background-color: green;
+    padding: 16px;
+}
+
+/* Estilo para o botão flutuante */
+#backToTopBtn {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    border: none;
+    outline: none;
+    background-color: #641AF8;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+#backToTopBtn:hover {
+    background-color: #A780F5;
+}
