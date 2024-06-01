@@ -1,0 +1,21 @@
+.footer-container {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20vh;
+}
+
+.text-footer{
+    color: #C4C4C4;
+}
+
+.btn-icon-footer {
+    display: flex;
+    justify-content: right;
+    gap: 3px; /* Espaço entre os ícones */
+    padding-right: 10%;
+}
+
+.btn-icon-footer a img {
+    width: 48px; /* Ajuste conforme necessário */
+    height: 48px; /* Ajuste conforme necessário */
+}
